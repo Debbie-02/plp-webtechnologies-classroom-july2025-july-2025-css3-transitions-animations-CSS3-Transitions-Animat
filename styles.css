@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+  background: #f9f9f9;
+}
+
+/* Part 1: Button Hover Effect */
+.hover-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: #6634db;
+  color: white;
+  transition: background 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.hover-btn:hover {
+  background: #21a021;
+  transform: scale(1.1);
+}
+
+/* Box to Animate */
+#animate-box {
+  width: 100px;
+  height: 100px;
+  background: #cf351a;
+  margin: 20px auto;
+  transition: transform 0.5s;
+}
+
+/* Keyframe Animation */
+@keyframes slideIn {
+  from { transform: translateY(-100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes rotateBox {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Popup Modal */
+#popup {
+  width: 200px;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 20px auto;
+  animation: slideIn 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+/* When Animation Triggered */
+.animate {
+  animation: rotateBox 2s linear infinite;
+}
+
+/* Button to Trigger Animation */
+#start-animation {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: #ad4a08;
+  color: white;
+  cursor: pointer;
+}
+#startBtn:hover {
+  background: #3023a3;
+}
+#stopBtn:hover {
+ background: #ce3712
+}
+#closePopup:hover {
+  background: #ce3712;
+}
+
+  
